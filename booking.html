@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Stay | Hearthside Groves Farmhouse</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+<div class="booking-container">
+  <h1>Book Your Stay at Hearthside Groves Farmhouse</h1>
+  <form class="booking-form" action="/submit-booking" method="POST">
+    
+    <label for="checkin">Check-in Date:</label>
+    <input type="date" id="checkin" name="checkin" required>
+    
+    <label for="checkout">Check-out Date:</label>
+    <input type="date" id="checkout" name="checkout" required>
+    
+    <label for="guests">Number of Guests:</label>
+    <select id="guests" name="guests" required>
+      <option value="1">1 Guest</option>
+      <option value="2">2 Guests</option>
+      <option value="3">3 Guests</option>
+      <option value="4">4 Guests</option>
+      <option value="5">5 Guests</option>
+      <option value="6">6 Guests</option>
+    </select>
+    
+    <label for="room">Room Type:</label>
+    <select id="room" name="room" required>
+      <option value="standard">Standard Room</option>
+      <option value="suite">Suite</option>
+      <option value="cottage">Private Cottage</option>
+    </select>
+    
+    <label for="message">Special Requests:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Let us know if you have any special requests..."></textarea>
+    
+    <button type="submit">Book Now</button>
+  </form>
+</div>
+
+</body>
+</html>
